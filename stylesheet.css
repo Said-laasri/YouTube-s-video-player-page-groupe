@@ -3,14 +3,22 @@
     padding: 0px;
     margin:2px;
     background-color: rgb(241, 239, 234);
+    
   }
-  
-  
-  #photo{
+  .left-bar{
     width: 100px; 
     height: 30px;
-    margin-top : 0px;  
+    margin-top : 0px;
   }
+  
+   #photo{
+    width: 80px; 
+    height: 50px;
+    margin-top : -40px; 
+    margin-left: 30px;
+    
+  } 
+
   .midle-bar{
     display: inline-flex;
     left: 30% ;
@@ -21,12 +29,20 @@
     margin-bottom: 10px;
     margin-left: 120px;
     margin-right: 120px;
+  
+  }
+  .material-symbols-outlined{
+    color: rgb(59, 159, 241);
+    font-size: 20%;
   }
   .material-symbols-sharp{
     font-size: 20%;
     color: rgb(59, 159, 241);
+    width: 100px;
+    height: 20px;
 
   }
+
   .right-bar{
     display: flexbox;
     right: 0% ;
@@ -37,6 +53,7 @@
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
+    
 
   }
   .material-symbols-rounded{
