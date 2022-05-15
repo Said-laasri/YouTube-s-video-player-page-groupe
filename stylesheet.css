@@ -1,13 +1,47 @@
 
 *{
     padding: 0px;
-    margin:2px;
+    margin:0;
     background-color: rgb(241, 239, 234);
+    position: relative;
     
   }
+
+
+
+  .container{
+
+    display: flex;
+    align-items: flex-start;
+    
+
+
+ }
+ .sidebar{
+
+    width: 10%;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: rgb(240, 239, 239);
+  
+ }
+
+ .navbar{
+   
+  width: 100%;
+  height: 70px;
+  border: 1px solid black;
+  margin-left: 0px;
+  background-color: rgb(240, 239, 239);
+  
+  
+
+ }
+
   .left-bar{
     width: 60px; 
     height: 30px;
+    border: 1px solid black;
   }
   
    #photo{
@@ -16,6 +50,7 @@
     margin-left: 30px;
     margin-top :-70px;
     margin-bottom:20px;
+
   } 
 
   .midle-bar{
@@ -28,6 +63,7 @@
     margin-bottom: 10px;
     margin-left: 120px;
     margin-right: 120px;
+    border: 1px solid black;
   
   }
   .material-symbols-outlined{
@@ -52,7 +88,7 @@
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    
+    border: 1px solid black;
 
   }
   .material-symbols-rounded{
