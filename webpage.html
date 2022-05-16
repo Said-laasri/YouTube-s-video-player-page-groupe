@@ -1,71 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Document</title>
-</head>
-
-  
-<body>
-  <nav>
-    <div>
-      <div class="left-bar">
-        <span class="material-symbols-sharp">menu</span>
-        <img id="photo" alt="Youtube" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Logo_of_YouTube_%282013-2015%29.svg">
-        <br>
-        <br>
-        <span class="material-symbols-outlined">
-          home
-          </span><h1>Home</h1>
-          <hr/>
-          <span class="material-symbols-outlined">
-            explore
-            </span><h1>Explore</h1>
-            <hr/>
-            <img id="photo2" alt="Youtubeshorts" src="youtube-shorts.svg"><h1>Shorts</h1> <hr/>
-            <img id="photo3" alt="Youtubesub" src="youtube-subscribe.svg"><h1>Subscribe</h><hr/> 
+    <title>youtube personal page</title>
+  </head>
+  <body>
+    <nav class="flex-div">
+      <div class="div-left flex-div">
+        <img src="/images/menu.png" class="menu">
+        <img src="images/logo.png" class="logo">
       </div>
-      
-
-
-      <div class="midle-bar">
-          <input id="input" type="text" name="searche" placeholder="searche...">
-          <button  id="buton"type="button"><span class="material-symbols-outlined">
-               search</span></button>
-          <span class="material-symbols-sharp">mic</span>
+      <div class="midle-div flex-div">
+        <div class="search flex-div">
+          <input type="text" name="searche" placeholder="searche...">
+          <img src="/images/search.png">
+        </div>
+        <img class="mic" src="/images/voice-search.png" alt="microphone">
       </div>
-
-      <div class="right-bar">
-        <span class="material-symbols-rounded">videocam</span>
-        <span class="material-symbols-rounded">apps</span>
-        <span class="material-symbols-rounded">notifications</span>
-        <span class="material-symbols-rounded">account_circle</span>
-        
-     
-     </div>
-      <br><hr color="black"/>
+      <div class="right-div flex-div">
+        <img src="/images/upload.png">
+        <img src="/images/more.png">
+        <img src="/images/notification.png">
+        <img class="user-icon" src="/images/elon-musk-pouces.png">
+      </div>
+    </nav>
+    <!-- side bar -->
+    <div class="sidebar">
+      <div class="link">
+        <a href="">
+          <img src="/images/home.png">
+          <p>Home</p>
+        </a>
+        <a href="">
+          <img src="/images/explore.png">
+          <p>Explore</p>
+        </a>
+        <a href="">
+          <img src="/images/subscriprion.png">
+          <p>Subcription</p>
+        </a>
+        <a href="">
+          <img src="/images/library.png">
+          <p>Library</p>
+        </a>
+        <a href="">
+          <img src="/images/history.png">
+          <p>History</p>
+        </a>
+        <a href="">
+          <img src="/images/playlist.png">
+          <p>Playlist</p>
+        </a>
+        <a href="">
+          <img src="/images/messages.png">
+          <p>Messages</p>
+        </a>
+        <a href="">
+          <img src="/images/show-more.png">
+          <p>show-more</p>
+        </a>
+        <hr>
+      </div>
+      <div class="supsribe">
+        <h3>SUBCRIBED</h3>
+        <a href="">
+          <img src="/images/elon-musk-pouces.png">
+          <p>Elon Musk</p>
+        </a>
+        <a href="">
+          <img src="/images/said.png">
+          <p>said</p>
+        </a>
+        <a href="">
+          <img src="/images/tarik.png">
+          <p>tarik</p>
+        </a>
+        <a href="">
+          <img src="/images/piesie.png">
+          <p>piecie</p>
+        </a>
+      </div>
     </div>
-    
-    
-    
-    
-  </nav>
-  
+    <!-- main content -->
+    <div class="container">
+      <div class="banner">
+        <img src="/images/Banner-Batter.png" >
+      </div>
+
+      <div class="content">
+
+        <div class="vid-list">
+            <a href=""><img src="/images/vid1.png" class="toonin"></a>
+          <div class="flex-div">
+            <img src="/images/elon-musk-pouces.png" >
+            <div class="vid-info">
+              <a href="">Learn coding!</a>
+              <p>fast/easy learning</p>
+              <p>200 Views &bull; 1 Week</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="/images/vid2.pgn" class="toonin"></a>
+          <div class="flex-div">
+            <img src="/images/elon-musk-pouces.png" >
+            <div class="vid-info">
+              <a href="">learn Python-full course</a>
+              <p>fast/easy learning</p>
+              <p>200 Views &bull; 1 Week</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="/images/vid3.png" class="toonin"></a>
+          <div class="flex-div">
+            <img src="/images/elon-musk-pouces.png" >
+            <div class="vid-info">
+              <a href="">how to learn to code</a>
+              <p>fast/easy learning</p>
+              <p>200 Views &bull; 1 Week</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="/images/vid4.png" class="toonin"></a>
+          <div class="flex-div">
+            <img src="/images/elon-musk-pouces.png" >
+            <div class="vid-info">
+              <a href="">10 Coolest Gadgets</a>
+              <p>fast/easy learning</p>
+              <p>200 Views &bull; 1 Week</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="/images/vid5.png" class="toonin"></a>
+          <div class="flex-div">
+            <img src="/images/elon-musk-pouces.png" >
+            <div class="vid-info">
+              <a href="">5 Technology trend</a>
+              <p>fast/easy learning</p>
+              <p>200 Views &bull; 1 Week</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="/images/vid6.png" class="toonin"></a>
+          <div class="flex-div">
+            <img src="/images/elon-musk-pouces.png" >
+            <div class="vid-info">
+              <a href="">Growing Industries !</a>
+              <p>fast/easy learning</p>
+              <p>200 Views &bull; 1 Week</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="/images/vid7.png" class="toonin"></a>
+          <div class="flex-div">
+            <img src="/images/elon-musk-pouces.png" >
+            <div class="vid-info">
+              <a href="">Top 10 Technologies</a>
+              <p>fast/easy learning</p>
+              <p>200 Views &bull; 1 Week</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="/images/vid8.png" class="toonin"></a>
+          <div class="flex-div">
+            <img src="/images/elon-musk-pouces.png" >
+            <div class="vid-info">
+              <a href="">Inventions of the Future</a>
+              <p>fast/easy learning</p>
+              <p>200 Views &bull; 1 Week</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href=""><img src="/images/vid9.png" class="toonin"></a>
+        <div class="flex-div">
+          <img src="/images/elon-musk-pouces.png" >
+          <div class="vid-info">
+            <a href="">Mind Blowing gadgets</a>
+            <p>fast/easy learning</p>
+            <p>200 Views &bull; 1 Week</p>
+          </div>
+        </div>
+      </div>
+      <div class="vid-list">
+        <a href=""><img src="/images/vid11.png" class="toonin"></a>
+      <div class="flex-div">
+        <img src="/images/elon-musk-pouces.png" >
+        <div class="vid-info">
+          <a href="">"Unbox therapy" channel</a>
+          <p>fast/easy learning</p>
+          <p>200 Views &bull; 1 Week</p>
+        </div>
+      </div>
+    </div>
+      </div>
 
 
 
-
-
-</body>
-
-
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
