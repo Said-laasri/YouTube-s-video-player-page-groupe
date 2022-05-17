@@ -6,106 +6,593 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,0" />
-    <link rel="stylesheet" href="/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c995a71190.js" crossorigin="anonymous"></script>
+    
+    <title>Welcome to Youtube</title>
 </head>
 
 
 <body>
 
-    <nav>
-        <div class="container">
+    <nav >
+      
+            <div class="navbar flex ">
 
-
-            <div class="sidebar">
-           
-               <ul>
-
-                <li> <a href="#" > <span class="material-symbols-sharp">menu</span></a></li>
-                <li> <a>
-                 
-                  <span class="material-symbols-outlined">
-                    home
-                </span>
-
-                <span>Home</span>
-
-                </a></li>
-                <li> <a>
-                  <span class="material-symbols-outlined">
-                    explore
-                </span>
-                <span>Explore</span>
-
-                </a></li>
-                <li> <a>
-
-
-                  <img id="photo2" alt="Youtubeshorts" src="youtube-shorts.svg">
-                <span>Shorts</span>
-                </a></li>
-
-
-                <li> <a>
-                  
-                <img id="photo3" alt="Youtubesub" src="youtube-subscribe.svg">
-                <span>Subscribe</span>
-                </a></li>
-
-               </ul>
+              <div class="left-bar flex">
                 
+                <img class=" icon"  onclick="openNav()" alt="Menu" src="images/list.png">
+               <i class="fa-brands fa-youtube" ></i>
+                  <p class="logotext">Youtube</p>  
+              </div>
+              
                 
-               
-                
-                
-                
-                
-                
-                    
-            </div>
-
-
-
-            <div class="navbar">
-
-              <img id="photo" alt="Youtube" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Logo_of_YouTube_%282013-2015%29.svg">
-                
-              <div class="midle-bar">
+              <div class="midle-bar flex">
                 <input id="input" type="text" name="searche" placeholder="search...">
-                <span class="material-symbols-outlined" style=" position: relative; top:4px;  right: 30px; background-color:#fff ; width: 30px; height: 30px;">
-                        search</span>
-                <span class="material-symbols-sharp" style=" padding-top: 6px;">mic</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <img class=" icon" alt="mic" src="images/microphone-black-shape.png">
                 </div>
 
-                <div class="right-bar">
-                  <span class="material-symbols-rounded">videocam</span>
-                  <span class="material-symbols-rounded">apps</span>
-                  <span class="material-symbols-rounded">notifications</span>
-                  <span class="material-symbols-rounded">account_circle</span>
+                <div class="right-bar flex">
+                  <img class=" icon" alt="Menu" src="images/add-video.png">
+                  <img class=" icon" alt="Menu" src="images/grid.png">
+                  <img class=" icon" alt="Menu" src="images/bell.png">
+                
+                  <a href="#" onclick="openNav()"> <img src="images/pic.jpeg" class=" profile"> </a> 
   
   
               </div>
 
             </div>
+    </nav> <!--  close nav-->
 
+
+        <!--  the div for the sidebar slide--> 
+
+
+        
+        <div class="slidenav" id="navslide">
+
+          <ul>
+              
+               <li>  
+                   
+                   <a href="#" onclick="closeNav()">
+                    <img class=" icon" alt="Menu" src="images/list.png">
+                   </a>
+                 
+                   
+                   
+                   </li>   
+              
+              
+              <li>  <a> 
+                  <img class=" icon" alt="Menu" src="images/home.png">
+                  <span class=" icon-descri"> Home </span>
+                  </a>
+              
+              </li>   
+              
+                      <li>
+                        <a>
+                  
+                     <img class=" icon" alt="Menu" src="images/direction.png">
+                        <span class=" icon-descri"> Explore</span>
+                  
+                      </a> 
+                    </li>
+                  
+                  
+              
+                  
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/subscribe.png">
+                  <span  class=" icon-descri">Suscribe</span>
+            
+                  </a></li>
+                  
+                  <hr>
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/library.png">
+                  <span  class=" icon-descri">Library</span>
+            
+                  </a></li>
+                 
+
+                     
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/historical.png">
+                  <span  class=" icon-descri">Historical</span>
+            
+                  </a></li>
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/youtube.png">
+                  <span  class=" icon-descri">Your videos</span>
+            
+                  </a></li>
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/clock.png">
+                  <span  class=" icon-descri">To Watch later</span>
+            
+                  </a></li>
+                  
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/like.png">
+                  <span  class=" icon-descri">"Like" videos</span>
+            
+                  </a></li>
+
+
+                   
+                  <li><a>
+                    <img class=" icon" alt="Menu" src="images/expand-button.png">
+                  <span  class=" icon-descri">More</span>
+            
+                  </a></li>
+
+                 
+                    <hr>
+                  <li><a>
+                    
+                  <span  class=" icon-descri headline">Subscription</span>
+            
+                  </a></li>
+
+                  
+
+                  <li><a>
+                    <img src="images/pic.jpeg" class=" profile"> 
+                    <span  class=" icon-descri ">Tarik Bouari</span>
+              
+                    </a></li>
+                    <li><a>
+                      <img src="images/pic.jpeg" class=" profile"> 
+                      <span  class=" icon-descri ">SAID the developer</span>
+                
+                      </a></li>
+
+                      <li><a>
+                        <img src="images/pic.jpeg" class=" profile"> 
+                        <span  class=" icon-descri ">Webdesin with Piesie</span>
+                  
+                        </a></li>
+    
+
+                        <hr>
+                        <li><a>
+                          
+                        <span  class=" icon-descri headline">Other youtube content</span>
+                  
+                        </a></li>
+                   
+
+
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/live.png">
+                        <span  class=" icon-descri">Live</span>
+                  
+                        </a></li>
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/console.png">
+                        <span  class=" icon-descri">Games</span>
+                  
+                        </a></li>
+
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/dress.png">
+                        <span  class=" icon-descri">Fashion and Beauty</span>
+                  
+                        </a></li>
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/idea.png">
+                        <span  class=" icon-descri">Knowledge & Culture</span>
+                  
+                        </a></li>
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/trophy.png">
+                        <span  class=" icon-descri">Sport</span>
+                  
+                        </a></li>
+                        <hr>
+
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/settings.png">
+                        <span  class=" icon-descri">Settings</span>
+                  
+                  
+                        </a></li>
+
+                        <li><a>
+                          <img class=" icon" alt="Menu" src="images/help.png">
+                        <span  class=" icon-descri">Aid</span>
+                  
+                        </a></li>
+      
+
+                  </ul>
+
+                  </div>
+
+
+     <div class="container2">
+
+
+
+
+
+
+
+       <!--  Div for side bar-->
+
+
+      <div class="sidebar">
+     
+         <ul>
+           
+          <li> <a>
+            <img class=" icon" alt="Menu" src="images/home.png"><br>
+          <span  class=" icon-descri">Home</span>
+    
+          </a></li>
+          <li><a>
+            <img class=" icon" alt="Menu" src="images/direction.png"><br>
+          <span  class=" icon-descri">Explore</span>
+    
+          </a></li>
+          <li><a>
+            <img class=" icon" alt="Menu" src="images/subscribe.png"><br>
+          <span  class=" icon-descri">Suscribe</span>
+    
+          </a></li>
+          <li><a>
+            <img class=" icon" alt="Menu" src="images/library.png"><br>
+          <span  class=" icon-descri">Library</span>
+    
+          </a></li>
+          <li><a>
+            <img class=" icon" alt="Menu" src="images/historical.png"><br>
+          <span  class=" icon-descri">Historical</span>
+    
+          </a></li>
+  
             
             
+            
+
+         
+
+         </ul>
+         </div> <!-- sidebar close-->
+
+
+         <div class="main-page">
+            
+          <div class="banner">
+             
+          </div>
+             
+          <div class="grid-box">
+
+
+
+          <!-- start of visdeo box (4video) -->
+               <div   class="video-box">
+              <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+              </iframe>
+            
+              <div class="video-title">  
+                  <img src="images/pic.jpeg" class=" profile1">
+                <span class="text">
+                  Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                  <p class=" video-details">
+                       <small>  
+                      Rikstone <br>
+                      100k views . 2 months </p>
+                  </small> 
+
+                      </span> 
+                      </div>
+          </div>
+
+              <!-- end of viode box (4video) -->
+
+
+              
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
           
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
         </div>
 
-
-
-
-    </nav>
+            <!-- end of viode box (4video) -->
 
 
 
 
+            
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+
+
+
+            
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+          
+
+            
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+
+
+            
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+
+          
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+          
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+        
+          <!-- start of visdeo box (4video) -->
+          <div   class="video-box">
+            <iframe width="290" height="150"
+                src="https://www.youtube.com/embed/hinoioN1_14">
+            </iframe>
+          
+            <div class="video-title">  
+                <img src="images/pic.jpeg" class=" profile1">
+              <span class="text">
+                Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+                <p class=" video-details">
+                     <small>  
+                    Rikstone <br>
+                    100k views . 2 months </p>
+                </small> 
+
+                    </span> 
+                    </div>
+        </div>
+
+            <!-- end of viode box (4video) -->
+
+
+            
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+
+          
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+          
+        <!-- start of visdeo box (4video) -->
+        <div   class="video-box">
+          <iframe width="290" height="150"
+            src="https://www.youtube.com/embed/hinoioN1_14">
+          </iframe>
+        
+          <div class="video-title">  
+              <img src="images/pic.jpeg" class=" profile1">
+            <span class="text">
+              Pop Hits 2022 - Ed Sheeran, Shawn Mendes<br>
+              <p class=" video-details">
+                   <small>  
+                  Rikstone <br>
+                  100k views . 2 months </p>
+              </small> 
+
+                  </span> 
+                  </div>
+      </div>
+
+          <!-- end of viode box (4video) -->
+
+
+
+              
+              
+          </div> <!-- grid box close-->
+          
+  
+
+
+
+
+
+    </div> <!--  Main page vlose-->
+
+
+<!--   cointainer close-->
+    </div> 
+
+
+<script src="script.js"></script>
 
 </body>
 
